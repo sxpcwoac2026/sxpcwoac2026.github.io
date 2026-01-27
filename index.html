@@ -55,23 +55,143 @@
         A detailed guide for installing HEASoft is available here: [Insert Guide Link].
     </p>
 
-    <h2>Lecturers and Mentors</h2>
-    <table class="mentors">
-        <tr>
-            <td class="mentors">
-                    <img src="assets/Udayaraj_Khanal.jpg" alt="Prof. Udayaraj Khanal">
-            </td>
-            <td class="mentor">
-                    <img src="assets/daya_nidhi_chhatkuli.jpg" alt="Dr. Daya Nidhi Chhatkuli" style="width: 80%">
-            </td>
-            <td class="mentor">
-                    <img src="assets/nagarkoti.png" alt="Dr. Shreerram Nagarkoti">
-            </td>
-            <td class="mentor">
-                    <img src="assets/anil_kandel.jpeg" alt="Mr. Anil Kandel">
-            </td>
-        </tr>
-    </table>
+<h2>Lecturers and Mentors</h2>
+<table class="mentors">
+    <tr>
+        <!-- Prof. Udayaraj Khanal -->
+        <td class="mentor">
+            <div class="mentor-container">
+                <img src="assets/Udayaraj_Khanal.jpg" alt="Prof. Udayaraj Khanal" class="mentor-img">
+                <div class="mentor-info">
+                    <a href="#" class="mentor-name">Prof. Udayaraj Khanal</a>
+                    <p class="mentor-institute">Institute of Engineering, Tribhuvan University</p>
+                </div>
+            </div>
+        </td>
+        
+        <!-- Dr. Daya Nidhi Chhatkuli -->
+        <td class="mentor">
+            <div class="mentor-container">
+                <img src="assets/daya_nidhi_chhatkuli.jpg" alt="Dr. Daya Nidhi Chhatkuli" class="mentor-img">
+                <div class="mentor-info">
+                    <a href="#" class="mentor-name">Dr. Daya Nidhi Chhatkuli</a>
+                    <p class="mentor-institute">Institute of Engineering, Tribhuvan University</p>
+                </div>
+            </div>
+        </td>
+        
+        <!-- Dr. Shreerram Nagarkoti -->
+        <td class="mentor">
+            <div class="mentor-container">
+                <img src="assets/nagarkoti.png" alt="Dr. Shreerram Nagarkoti" class="mentor-img">
+                <div class="mentor-info">
+                    <a href="#" class="mentor-name">Dr. Shreerram Nagarkoti</a>
+                    <p class="mentor-institute">Institute of Engineering, Tribhuvan University</p>
+                </div>
+            </div>
+        </td>
+        
+        <!-- Mr. Anil Kandel -->
+        <td class="mentor">
+            <div class="mentor-container">
+                <img src="assets/anil_kandel.jpeg" alt="Mr. Anil Kandel" class="mentor-img">
+                <div class="mentor-info">
+                    <a href="#" class="mentor-name">Mr. Anil Kandel</a>
+                    <p class="mentor-institute">Institute of Engineering, Tribhuvan University</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<style>
+.mentors {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.mentor {
+    width: 25%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.mentor-container {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.mentor-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mentor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.mentor-info {
+    padding: 10px 0;
+}
+
+.mentor-name {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mentor-name:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.mentor-institute {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .mentor-img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mentors {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .mentor {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .mentor {
+        width: 100%;
+    }
+}
+</style>
 
     <footer>
         &copy; Conference Organizers
