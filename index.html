@@ -1,83 +1,331 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Workshop on Astrophysics and Cosmology 2026</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+
+        .member-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .member-name a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .member-name a:hover {
+            color: #3498db;
+        }
+
+        .member-institute {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+
+        .member-field {
+            font-size: 0.9rem;
+            color: #3498db;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .scholar-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .scholar-link:hover {
+            color: #2c387e;
+            text-decoration: underline;
+        }
+
+        .scholar-icon {
+            color: #4285f4;
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h1>Research Team</h1>
+            <p class="subtitle">Meet our accomplished researchers and their contributions to science</p>
+        </header>
 
-    <div class="banner">
-        <img src="assets/theme.png" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">WOAC </span><span class="title2">SXPC</span> <span class="year">2026</span>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Dr. Alex Johnson">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=alexjohnson123" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Alex Johnson
+                        </a>
+                    </h3>
+                    <p class="member-institute">MIT Computer Science & Artificial Intelligence Lab</p>
+                    <p class="member-field">Artificial Intelligence & Machine Learning</p>
+                    <a href="https://scholar.google.com/citations?user=alexjohnson123" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Dr. Maria Rodriguez">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=mariarodriguez456" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Maria Rodriguez
+                        </a>
+                    </h3>
+                    <p class="member-institute">Stanford University Biomedical Engineering</p>
+                    <p class="member-field">Biomedical Engineering & Neuroscience</p>
+                    <a href="https://scholar.google.com/citations?user=mariarodriguez456" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Dr. Kenji Tanaka">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=kenjitanaka789" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Kenji Tanaka
+                        </a>
+                    </h3>
+                    <p class="member-institute">University of Tokyo Robotics Institute</p>
+                    <p class="member-field">Robotics & Autonomous Systems</p>
+                    <a href="https://scholar.google.com/citations?user=kenjitanaka789" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Dr. Sarah Chen">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=sarahchen101" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Sarah Chen
+                        </a>
+                    </h3>
+                    <p class="member-institute">Harvard University Environmental Science</p>
+                    <p class="member-field">Climate Science & Environmental Engineering</p>
+                    <a href="https://scholar.google.com/citations?user=sarahchen101" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Dr. Michael Brown">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=michaelbrown112" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Michael Brown
+                        </a>
+                    </h3>
+                    <p class="member-institute">Caltech Quantum Physics Department</p>
+                    <p class="member-field">Quantum Computing & Theoretical Physics</p>
+                    <a href="https://scholar.google.com/citations?user=michaelbrown112" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Dr. Emma Wilson">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">
+                        <a href="https://scholar.google.com/citations?user=emmawilson131" target="_blank">
+                            <i class="fas fa-user-graduate"></i> Dr. Emma Wilson
+                        </a>
+                    </h3>
+                    <p class="member-institute">Oxford University Medical Research</p>
+                    <p class="member-field">Genomics & Precision Medicine</p>
+                    <a href="https://scholar.google.com/citations?user=emmawilson131" target="_blank" class="scholar-link">
+                        <i class="fas fa-graduation-cap scholar-icon"></i> Google Scholar Profile
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="bottom-right">
-            Feb 3-5, 2026 <br> St. Xavier's College, Maitighar, Kathmandu
-        </div>
+
+        <footer>
+            <p>© 2023 Research Collaboration Network. All images are for demonstration purposes.</p>
+            <p>Google Scholar links open in new windows for convenience.</p>
+        </footer>
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
-    </table>
-
-    <h2>Welcome to SXPCWOAC 2026</h2>
-    <p>
-        The Workshop on Astrophysics and Cosmology, organized by SXPC–Nepal, is a three-day academic workshop to be held from February 03–05 at St. Xavier's College, Maitighar. The workshop introduces participants to core topics in cosmology, galaxy formation and evolution, and high-energy astrophysics, with an emphasis on hands-on data analysis.
-    </p>
-    <p>
-        Participants will receive guided training on HEASoft and XSPEC, including software installation, data preparation, and physical interpretation of astrophysical observations. Assignments will be given after the workshop, and certificates will be awarded based on participation and assignment completion.
-    </p>
-    <p>
-        A detailed guide for installing HEASoft is available here: [Insert Guide Link].
-    </p>
-
-    <h2>Lecturers and Mentors</h2>
-    <table class="mentors">
-        <tr>
-            <td class="mentors">
-                    <img src="assets/Udayaraj_Khanal.jpg" alt="Prof. Udayaraj Khanal">
-            </td>
-            <td class="mentor">
-                    <img src="assets/daya_nidhi_chhatkuli.jpg" alt="Dr. Daya Nidhi Chhatkuli" style="width: 80%">
-            </td>
-            <td class="mentor">
-                    <img src="assets/nagarkoti.png" alt="Dr. Shreerram Nagarkoti">
-            </td>
-            <td class="mentor">
-                    <img src="assets/anil_kandel.jpeg" alt="Mr. Anil Kandel">
-            </td>
-        </tr>
-    </table>
-
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
-
+    <script>
+        // Optional JavaScript for additional interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation delay to each team member card for staggered effect
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            teamMembers.forEach((member, index) => {
+                member.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Add confirmation for external links (optional)
+            const scholarLinks = document.querySelectorAll('.member-name a, .scholar-link');
+            
+            scholarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // If you want to track clicks or add analytics
+                    console.log(`Navigating to Google Scholar profile: ${this.href}`);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
